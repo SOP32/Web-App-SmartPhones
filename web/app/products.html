@@ -1,0 +1,34 @@
+<style>
+    .grid-container {
+  display: grid;
+  grid-gap: 50px 100px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 10px;
+  text-align: center;
+}
+</style>
+<div class="container ">
+    <div class="panel-group" style="margin-top: 30px;">
+        <div class="panel panel-default shadowBox" style="height: 500px">
+            <div class="panel-heading">
+                <label>Products</label>
+            </div>
+            <div class="panel-body" style="padding-top: 30px">
+                <div class="grid-container">
+                    <div ng-repeat="product in products" class="panel panel-default shadowBox">
+                        <div class="grid-item">
+                            <h3 class="thinMargin pull-left">{{product.productName}}</h3>
+                            <p><label>{{product.description}}</label></p>
+                            <button ng-click="getDetails(product.id)">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
