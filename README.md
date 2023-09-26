@@ -11,4 +11,4 @@ Technology stack used:
   Back end functionalities implemented in Java is exposed as REST APIs. Utilized Spring framework to implement Rest controllers.
   AngularJS framework is used to fire REST requests and render the data with the help of Twitter Bootstrap.
   
-  * Project is still under developemnt.
+
